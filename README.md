@@ -52,9 +52,18 @@ I create https://www.costycnc.it/avr-hex-uploader
 
    6.it's the program I was inspired by:
 
-   I modified the line with catch(that initially give the errors with cors policy) and i introduced the line 139: o=document.querySelector("[costycnc]").value;
-   that read directly from edit box your hex file. 
+   I modified the line with catch(that initially give the errors with cors policy) and i introduced the line
 
+    139: o=document.querySelector("[costycnc]").value; that read directly from edit box your hex file.
+
+
+   
+I hope that appreciate this super easy mode to compile a simple asm to hex code and after with online program to upload to arduino. 
+AND I APPRECIATE IF LEAVE A COMMENT IF HAVE PROBLEMS OF IT IS WORKING!
+
+IF YOU ARE CURIOUSLY ABOUT ME VISIT MY PAGE HTTPS://WWW.COSTYCNC.IT
+
+OR SEARCH ON INTERNET THE KEYWORD "COSTYCNC" ... GOOD DAY!
    
    
 
