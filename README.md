@@ -46,6 +46,11 @@ I create https://www.costycnc.it/avr-hex-uploader
            out PORTB,r24 ; All 8 pins of port b will be low that mean off 
            loop:
            rjmp loop
+
+    5.From here https://www.costycnc.it/avr-hex-uploader/easy-hex-create.zip you can download file where have the mini program avra that is a minimal asm to hex compiler.Also will have a sample asm example.
+   you can compile directly in dos command with : avra test.asm  or can create a bat file where put avra test.asm  and second line the Pause for rimain the windows open to see what comunicate program
+
+   
    
 
        
