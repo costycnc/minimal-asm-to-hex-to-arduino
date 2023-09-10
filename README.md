@@ -63,7 +63,7 @@ I create https://www.costycnc.it/avr-hex-uploader
 
    I modified the line with catch(that initially give the errors with cors policy) and i introduced the line
 
-    139: o=document.querySelector("[costycnc]").value; that read directly from edit box your hex file.
+           139: o=document.querySelector("[costycnc]").value; that read directly from edit box your hex file.
 
 
    
