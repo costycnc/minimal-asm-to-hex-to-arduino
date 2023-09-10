@@ -50,6 +50,11 @@ I create https://www.costycnc.it/avr-hex-uploader
     5.From here https://www.costycnc.it/avr-hex-uploader/easy-hex-create.zip you can download file where have the mini program avra that is a minimal asm to hex compiler.Also will have a sample asm example.
    you can compile directly in dos command with : avra test.asm  or can create a bat file where put avra test.asm  and second line the Pause for rimain the windows open to see what comunicate program
 
+   6.it's the program I was inspired by:
+
+   I modified the line with catch(that initially give the errors with cors policy) and i introduced the line 139: o=document.querySelector("[costycnc]").value;
+   that read directly from edit box your hex file. 
+
    
    
 
