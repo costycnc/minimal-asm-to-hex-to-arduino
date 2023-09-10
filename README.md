@@ -59,7 +59,8 @@ I create https://www.costycnc.it/avr-hex-uploader
 
    
 I hope that appreciate this super easy mode to compile a simple asm to hex code and after with online program to upload to arduino. 
-AND I APPRECIATE IF LEAVE A COMMENT IF HAVE PROBLEMS OF IT IS WORKING!
+
+I APPRECIATE IF LEAVE A COMMENT IF HAVE PROBLEMS OF IT IS WORKING!
 
 IF YOU ARE CURIOUSLY ABOUT ME VISIT MY PAGE HTTPS://WWW.COSTYCNC.IT
 
