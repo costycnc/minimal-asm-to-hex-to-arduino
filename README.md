@@ -10,8 +10,12 @@ I create https://www.costycnc.it/avr-hex-uploader
 2.In this box you can put the hex code. So open your hex file with notepad ... copy text and put in this box.And upload to arduino.
 
 3. Here have two hex file :
-    if put :020000020000FC:040000000C946000FC:0800C0008FEF84B985B9FFCF71:00000001FF in the box and upload to arduino the led will remain on.
+   
+           if put :020000020000FC:040000000C946000FC:0800C0008FEF84B985B9FFCF71:00000001FF
+           in the box and upload to arduino the led will remain on.
+   
     here is the asm code that I followed:
+   
            .device ATmega32
         
            .equ PORTB = 0x05 
@@ -29,8 +33,13 @@ I create https://www.costycnc.it/avr-hex-uploader
            rjmp loop
 
 
-   4. if put :020000020000FC:040000000C946000FC:0800C00080E084B985B9FFCF8F:00000001FF  in the box and upload to arduino the led will remain on.
+   4. if put
+      
+            :020000020000FC:040000000C946000FC:0800C00080E084B985B9FFCF8F:00000001FF
+             in the box and upload to arduino the led will remain on.
+      
     here is the asm code that I followed:
+
            .device ATmega32
         
            .equ PORTB = 0x05 
