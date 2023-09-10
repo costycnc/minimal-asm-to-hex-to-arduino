@@ -12,40 +12,40 @@ I create https://www.costycnc.it/avr.hex.uploader
 3. Here have two hex file :
     if put :020000020000FC:040000000C946000FC:0800C0008FEF84B985B9FFCF71:00000001FF in the box and upload to arduino the led will remain on.
     here is the asm code that I followed:
-   .device ATmega32
-
-   .equ PORTB = 0x05 
-   .equ DDRB  = 0x04
-
-   .org 0x0000
-    jmp main
-   .org 0x0060
-
-   main:
-   ldi r24, 255 ;255 have al 8 bits one 11111111
-   out DDRB,r24 ; All 8 gate of port b will be high ... mean output( low 0 mean input)
-   out PORTB,r24 ; All 8 pins of port b will be high that mean ON (low mean OFF)
-   loop:
-   rjmp loop
+           .device ATmega32
+        
+           .equ PORTB = 0x05 
+           .equ DDRB  = 0x04
+        
+           .org 0x0000
+            jmp main
+           .org 0x0060
+        
+           main:
+           ldi r24, 255 ;255 have al 8 bits one 11111111
+           out DDRB,r24 ; All 8 gate of port b will be high ... mean output( low 0 mean input)
+           out PORTB,r24 ; All 8 pins of port b will be high that mean ON (low mean OFF)
+           loop:
+           rjmp loop
 
 
    4. if put :020000020000FC:040000000C946000FC:0800C00080E084B985B9FFCF8F:00000001FF  in the box and upload to arduino the led will remain on.
     here is the asm code that I followed:
-   .device ATmega32
-
-   .equ PORTB = 0x05 
-   .equ DDRB  = 0x04
-
-   .org 0x0000
-    jmp main
-   .org 0x0060
-
-   main:
-   ldi r24, 0 ;0 have al 8 bits one 00000000
-   out DDRB,r24 ; All 8 gate of port b will be low ... mean input
-   out PORTB,r24 ; All 8 pins of port b will be low that mean off 
-   loop:
-   rjmp loop
+           .device ATmega32
+        
+           .equ PORTB = 0x05 
+           .equ DDRB  = 0x04
+        
+           .org 0x0000
+            jmp main
+           .org 0x0060
+        
+           main:
+           ldi r24, 0 ;0 have al 8 bits one 00000000
+           out DDRB,r24 ; All 8 gate of port b will be low ... mean input
+           out PORTB,r24 ; All 8 pins of port b will be low that mean off 
+           loop:
+           rjmp loop
    
 
        
