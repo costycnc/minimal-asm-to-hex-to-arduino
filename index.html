@@ -1,0 +1,1375 @@
+<html>
+<head>
+<style>
+element.style {
+}
+.small {
+    font-size: smaller;
+}
+.memory-block {
+    width: 1.8em;
+    display: inline-block;
+    text-align: center;
+}
+.instr-bg {
+    background-color: #E6F3FF;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+.source-code {
+    font-family: source-code-pro, Courier New;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<p> Support only:   </p>
+<p> LDI R16,0x20   </p>
+<p> aaa:   </p>
+<p> RJMP aaa   </p>
+<p> BRNE aaa </p>
+<p></p>
+<textarea id="code" cols=30 rows="10"> </textarea>
+<button onclick="compile();">Compile</button>
+<div style="width:29em;" class="source-code">
+<div class="memory-block ">
+    <div>
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div><div class="memory-block ">
+    <div >
+        <div class="small">00</div>                                    
+    </div>
+</div>
+ </div>
+ <textarea id="hexcode" cols=30 rows="10"> </textarea>
+<script>
+            // Use https://www.debuggex.com/
+            // Matches: "label: INSTRUCTION (["')OPERAND1(]"'), (["')OPERAND2(]"')
+            // GROUPS:      1       2               3                    7
+            var regex = /^[\t ]*(?:([.A-Za-z]\w*)[:])?(?:[\t ]*([A-Za-z]{2,4})(?:[\t ]+(\[(\w+((\+|-)\d+)?)\]|\".+?\"|\'.+?\'|[.A-Za-z0-9]\w*)(?:[\t ]*[,][\t ]*(\[(\w+((\+|-)\d+)?)\]|\".+?\"|\'.+?\'|[.A-Za-z0-9]\w*))?)?)?/;
+
+            // Regex group indexes for operands
+            var op1_group = 3;
+            var op2_group = 7;
+
+            // MATCHES: "(+|-)INTEGER"
+            var regexNum = /^[-+]?[0-9]+$/;
+            // MATCHES: "(.L)abel"
+            var regexLabel = /^[.A-Za-z]\w*$/;
+            // Contains the program code & data generated by the assembler
+            var code = [];
+            // Contains the mapping from instructions to assembler line
+            var mapping = {};
+            // Hash map of label used to replace the labels after the assembler generated the code
+            var labels = {};
+            // Hash of uppercase labels used to detect duplicates
+            var normalizedLabels = {};            // Hash map of label used to replace the labels after the assembler generated the code
+			
+			var strf="";
+
+
+
+
+document.getElementById("code").value="rjmp aici\nldi r17,0x20\naici:\nrjmp aici\nrjmp aici";
+// Split text into code lines
+
+var input=document.getElementById("code").value;
+
+
+
+
+            var addLabel = function (label) {
+                var upperLabel = label.toUpperCase();
+                if (upperLabel in normalizedLabels)
+                    throw "Duplicate label: " + label;
+
+                if (upperLabel === "A" || upperLabel === "B" || upperLabel === "C" || upperLabel === "D")
+                    throw "Label contains keyword: " + upperLabel;
+                labels[label] = code.length;
+            };
+
+
+            // Allowed formats: 200, 200d, 0xA4, 0o48, 101b
+            var parseNumber = function (input) {
+                if (input.slice(0, 2) === "0x") {
+                    return parseInt(input.slice(2), 16);
+                } else if (input.slice(0, 2) === "0o") {
+                    return parseInt(input.slice(2), 8);
+                } else if (input.slice(input.length - 1) === "b") {
+                    return parseInt(input.slice(0, input.length - 1), 2);
+                } else if (input.slice(input.length - 1) === "d") {
+                    return parseInt(input.slice(0, input.length - 1), 10);
+                } else if (regexNum.exec(input)) {
+                    return parseInt(input, 10);
+                } else {
+                    throw "Invalid number format";
+                }
+            };
+
+
+const myChildDivs = document.querySelectorAll(".small");
+
+//console.log(myChildDivs[0].innerText);
+function compile()
+ {
+
+
+    var nr=0;
+	input=document.getElementById("code").value;
+	var lines = input.split('\n');
+	
+	
+	             code = [];
+            // Contains the mapping from instructions to assembler line
+            mapping = {};
+            // Hash map of label used to replace the labels after the assembler generated the code
+			   labels = {};
+            // Hash of uppercase labels used to detect duplicates
+            normalizedLabels = {};
+			
+		//trova tutti i label e salva in labels
+		
+for (var i = 0, l = lines.length; i < l; i++) 
+{   
+	var match = regex.exec(lines[i]);
+	if (match[1] !== undefined || match[2] !== undefined) 
+	{
+		if (match[1] !== undefined) 
+		{
+			addLabel(match[1]);
+			console.log("este label)");
+		}
+		if (match[2] !== undefined) 
+		{
+				var instr = match[2].toUpperCase();
+				switch (instr)
+				{
+					case 'LDI':	code.push(1,1);break;
+					case 'OUT':	code.push(1,1);break;
+					case 'RJMP':code.push(1,1);break;
+					case 'BRNE':code.push(1,1);break;
+				
+				}		
+		}
+	
+    }
+}			
+code = [];
+mapping = {};
+		  //Programul principal
+	
+	for (var i = 0, l = lines.length; i < l; i++) 
+	{   
+	console.log("lines.lenght=",lines.length);
+		var match = regex.exec(lines[i]);
+		if (match[1] !== undefined || match[2] !== undefined) {
+					//fatto sopra if (match[1] !== undefined) {addLabel(match[1]);}
+			if (match[2] !== undefined) {
+				var instr = match[2].toUpperCase();
+				var p1, p2, opCode;
+				// Add mapping instr pos to line number
+				// Don't do it for DB as this is not a real instruction
+				if (instr !== 'DB') {
+					mapping[code.length] = i;
+				}
+
+				switch (instr) {
+              
+					case 'LDI':
+				console.log("match[op1_group]=",match[op1_group]," match[op2_group]=",match[op2_group]);
+				console.log('parseInt("12")=',parseNumber("12"));
+				
+					p1 = match[op1_group];
+					p2 = match[op2_group];
+					var a=p1.slice(1);
+					let r=a-16;
+					var a1=parseNumber(p2);
+					let hx = a1 >> 4;
+					let lx = a1 & 0xF;
+					let s=r*16+lx;
+					let p=0xE*16+hx;
+					
+					code.push(s,p);
+					
+					//a=10 b=E2 Ldi R17,0x20 (32) a=xx*16+ 
+					
+					break;
+					case 'OUT':
+						p1 = parseNumber(match[op1_group]);
+						p2 = match[op2_group].slice(1)-16;
+						a=(p2*16)+p1;
+						b=0xB9;
+						code.push(a,b);					
+						break;
+						
+						
+						
+						
+						
+						
+						
+						
+					case 'RJMP':
+					
+					p1 = match[op1_group];
+					if(p1 in labels) 
+						{
+							iv=code.length;
+							pv=labels[p1];
+									if (pv>iv) 
+								{
+									a = (pv-iv)/2-1;
+									b=12*16;
+
+								}
+								else 
+								{	
+									a = 256+(pv-iv)/2-1;
+									b=12*16+15;	
+								}		
+						}
+						   console.log("push=",a,b);
+						code.push(a,b);
+					break;
+									
+						
+						
+					case 'BRNE':
+							iv=code.length;
+							pv=labels[p1];
+					if (pv>iv) 
+					{
+						a = (pv-iv)*4+1-8;
+						b=15*16+4;
+					}
+					else 
+					{					
+			
+						a = 256+(((pv-iv)*4+1)-8);
+						b=15*16+7;
+											
+					}
+					code.push(a,b);
+						break;					
+					
+
+					default:
+						throw "Invalid instruction: " + match[2];
+				}
+			}
+		} 
+		else {
+			// Check if line starts with a comment otherwise the line contains an error and can not be parsed
+			var line = lines[i].trim();
+			if (line !== "" && line.slice(0, 1) !== ";") {
+				throw "Syntax error";
+			}
+		}
+	} 
+	
+
+	
+	//scrive in div e salva in codeh sir cod in hex
+		for (var i = 0, l = code.length; i < l; i++) 
+	{   
+		var cdx=code[i].toString(16).toUpperCase();
+		myChildDivs[i].innerText=cdx.padStart(2, "0");
+
+        
+	}				
+
+//crea avr hex intel file
+
+var codex=":020000020000FC\n";  
+
+var ab=0;
+let group1;
+for (let i = 0; i <code.length; i += 16) {
+    let group = code.slice(i, i + 16); //valori in decimal 11,230,16,...
+	console.log("group",group);
+	
+	//parte1 calculeaza ce lungime are pachetul e lo scrive a inizio 08xxxxxxxxxxxxxx (con carattere hex e 08 no 8)
+	 let dimens=(group.length).toString(16).toUpperCase();// dimensiune normal pachete di 16 e che rimani e di meno
+	 console.log("dimens",dimens); //31 -> 1F quanto bytes scrive una volta
+	 group1 = ":"+dimens.padStart(2, "0"); //se e 8 -> 08 e scrive prima valoare lunghezza di string in buffer
+	 
+	 //parte2 calculeaza adresa da dove deve scrivere (con caractere hex) 
+	  const numberString = i.toString(16);   //
+	// Pad the number string with zeros to the left.
+	const pad = numberString.padStart(4, "0"); //000001  scrive adressa dove deve scrivere
+	group1 += pad+"00";
+	
+	//parte 3 calculeaza checksum e crive in buffer string hex
+	
+	group = code.slice(i, i + 16); //group se carica con buffer decimal
+
+     ab=group.length+i; //per checksum variabile ab con prime numere gia calcolate (nr di hex + indirizzo)
+      for (let j = 0; j < group.length; j++) {
+
+	    ab +=group[j];
+		cdxy=group[j].toString(16).toUpperCase();
+		group1 +=cdxy.padStart(2, "0"); //scrive hex code in string
+	    }
+		
+	ab=ab & 0xFF;
+ab=256-ab;
+group1=group1+ab.toString(16).toUpperCase();
+codex +=group1 +"\n";
+
+}
+codex +=":00000001FF";
+document.getElementById("hexcode").value=codex;
+				
+}                                    
+
+</script>
+</body>
+</html>
